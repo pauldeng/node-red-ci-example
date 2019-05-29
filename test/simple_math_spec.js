@@ -65,29 +65,24 @@ describe("Simple math tests", function() {
 
   // remove all inject and debug nodes as they seems not working well with the test helper library
   for (let i = 0; i < node_red_flows.length; i++) {
-    if (
-      node_red_flows[i].type === "inject" ||
-      node_red_flows[i].type === "debug"
-    ) {
+    if (node_red_flows[i].type === "inject") {
       node_red_flows.splice(i, 1);
     }
   }
 
-  // link the test helper node to target function
+  // change the debug print node to test helper node
   node_red_flows[
     node_red_flows.findIndex(function(node) {
-      return node.id === "e99a886c.09f818";
+      return node.id === "b3448699.0af008";
     })
-  ].wires[0].push("n2");
-  // add the test helper node
-  node_red_flows.push({ id: "n2", type: "helper" });
+  ].type = "helper";
 
   //console.log(JSON.stringify(node_red_flows));
 
   // this is real, it reads your node red flows and test
   it("1 + 2 = 3", function(done) {
     helper.load(functionNode, node_red_flows, settings, function() {
-      const n2 = helper.getNode("n2");
+      const n2 = helper.getNode("b3448699.0af008");
       const n1 = helper.getNode("e99a886c.09f818");
 
       n2.on("input", function(msg) {
