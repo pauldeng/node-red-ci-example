@@ -17,6 +17,7 @@
         "mocha": "^6.1.4",
         "node-red": "^0.20.5",
         "node-red-node-test-helper": "^0.2.2",
+        "prettier": "1.17.1",
         "should": "^13.2.3"
     }
 }
