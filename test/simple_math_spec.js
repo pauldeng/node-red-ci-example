@@ -94,4 +94,19 @@ describe("Simple math tests", function() {
       n1.receive({ payload: 1 });
     });
   });
+
+  it("1 + 1 + 2 = 4", function(done) {
+    helper.load(functionNode, node_red_flows, settings, function() {
+      const n2 = helper.getNode("b3448699.0af008");
+      const n1 = helper.getNode("15f8e4de.924ddb");
+
+      n2.on("input", function(msg) {
+        msg.payload.should.equal(4);
+        done();
+      });
+
+      // send data to the function need to be tested
+      n1.receive({ payload: 1 });
+    });
+  });
 });
