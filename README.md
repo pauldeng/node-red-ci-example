@@ -4,7 +4,7 @@ This is a example of Node Red npm test for Continuous Integration.
 
 ## What
 The Node Red flow is simple, it has two functions as of below. Inject node inject a number 1 and debug node will display 4 at the end (1 + 1 + 2 = 4).
-![flows](imgs/node-red-flow.png)
+![flows](imgs/node-red-flow.png)  
 The test script will test following cases by npm test:
 * 1+1=2
 * 1+2=3
