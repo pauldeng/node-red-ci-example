@@ -20,7 +20,7 @@ npm test
 
 ## CI Service Integration
 ### Travis CI
-add .travis.yml as in the file
+add .travis.yml as in the file  
 check out the Travis CI output: https://travis-ci.com/pauldeng/node-red-ci-example
 ### BitBucket Pipelines
 add bitbucket-pipelines.yml
