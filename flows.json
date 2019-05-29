@@ -1,1 +1,64 @@
-[{"id":"f66b5195.48e0a","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"eae30783.1abd58","type":"inject","z":"f66b5195.48e0a","name":"","topic":"","payload":"1","payloadType":"num","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":190,"y":140,"wires":[["15f8e4de.924ddb"]]},{"id":"15f8e4de.924ddb","type":"function","z":"f66b5195.48e0a","name":"plus 1","func":"msg.payload = msg.payload + 1;\nreturn msg;","outputs":1,"noerr":0,"x":370,"y":140,"wires":[["e99a886c.09f818"]]},{"id":"b3448699.0af008","type":"debug","z":"f66b5195.48e0a","name":"Result","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","x":730,"y":140,"wires":[]},{"id":"e99a886c.09f818","type":"function","z":"f66b5195.48e0a","name":"plus 2","func":"msg.payload = msg.payload + 2;\nreturn msg;","outputs":1,"noerr":0,"x":550,"y":140,"wires":[["b3448699.0af008"]]}]
+[
+  {
+    "id": "f66b5195.48e0a",
+    "type": "tab",
+    "label": "Flow 1",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "eae30783.1abd58",
+    "type": "inject",
+    "z": "f66b5195.48e0a",
+    "name": "",
+    "topic": "",
+    "payload": "1",
+    "payloadType": "num",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 190,
+    "y": 140,
+    "wires": [["15f8e4de.924ddb"]]
+  },
+  {
+    "id": "15f8e4de.924ddb",
+    "type": "function",
+    "z": "f66b5195.48e0a",
+    "name": "plus 1",
+    "func": "msg.payload = msg.payload + 1;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 370,
+    "y": 140,
+    "wires": [["e99a886c.09f818"]]
+  },
+  {
+    "id": "b3448699.0af008",
+    "type": "debug",
+    "z": "f66b5195.48e0a",
+    "name": "Result",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 730,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "e99a886c.09f818",
+    "type": "function",
+    "z": "f66b5195.48e0a",
+    "name": "plus 2",
+    "func": "msg.payload = msg.payload + 2;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 550,
+    "y": 140,
+    "wires": [["b3448699.0af008"]]
+  }
+]
