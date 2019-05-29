@@ -1,6 +1,6 @@
 # Node Red CI Example
 
-This is a example of Node Red npm test for Continuous Integration.
+This is a example of Node Red npm test for Continuous Integration. It uses node-red-node-test-helper.
 
 ## What
 The Node Red flow is simple, it has two functions as of below. Inject node injects a number 1 and debug node displays 4 at the end (1 + 1 + 2 = 4).
