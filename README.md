@@ -18,6 +18,17 @@ npm install
 npm test
 ```
 
+## Add tests to your existing project
+```bash
+# in your project folder
+npm install mocha chai should node-red node-red-node-test-helper --save-dev
+# please refer to https://github.com/node-red/node-red-node-test-helper
+# edit package.json and add "scripts": {"test": "mocha \"test/**/*_spec.js\""}, 
+mkdir test
+cd test
+# now you can add your own test script
+```
+
 ## CI Service Integration
 ### Travis CI
 add .travis.yml as in the file  
