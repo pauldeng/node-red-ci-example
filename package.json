@@ -3,10 +3,20 @@
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {},
+    "scripts": {
+        "test": "mocha \"test/**/*_spec.js\""
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
             "credentialsFile": "flows_cred.json"
         }
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^6.1.4",
+        "node-red": "^0.20.5",
+        "node-red-node-test-helper": "^0.2.2",
+        "should": "^13.2.3"
     }
 }
