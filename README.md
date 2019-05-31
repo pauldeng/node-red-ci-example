@@ -36,3 +36,6 @@ check out the Travis CI output: https://travis-ci.com/pauldeng/node-red-ci-examp
 ### BitBucket Pipelines
 add bitbucket-pipelines.yml
 
+## More
+* https://github.com/ksvan/node-red-contrib-verisure/wiki/Detailed-setup---automated-nodered-test  
+
